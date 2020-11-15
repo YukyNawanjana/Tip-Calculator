@@ -1,0 +1,28 @@
+.row{
+    height: 100vh;
+}
+.sidepic{
+    height: 100vh;
+    background: linear-gradient(rgba(23, 119, 228, 0.568) ,rgba(33, 236, 101, 0.335)) , url('./background.jpg')center no-repeat;
+    background-size: cover;
+}
+#totalTip{
+    font-size: 50px;
+    margin-top: 40px;
+}
+#totalTip:before{
+    content: "Tip amount";
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    text-transform: uppercase;
+}
+#totalTip sup{
+    font-size: 24px;
+    top:-18px;
+}
+#totalTip small{
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+}
