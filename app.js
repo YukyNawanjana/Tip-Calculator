@@ -5,5 +5,7 @@ const calculateBtn = document.getElementById('calBtn');
 
 
 calculateBtn.addEventListener('click', ()=>{
-   
+   const bill = billAmount.value;
+   const quality = billAmount.value;
+   const people = billAmount.value;
 });
