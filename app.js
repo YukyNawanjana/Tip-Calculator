@@ -6,8 +6,19 @@ const calculateBtn = document.getElementById('calBtn');
 
 calculateBtn.addEventListener('click', ()=>{
 
-   if(billAmount === "" || serviceQuality == 0 || totalPeople === ""){
+   if(billAmount === "" || serviceQuality == 0){
       window.alert("Please Enter some Values to get this baby up and running!");
   }
+
+  //Check to see if this input is empty or less than or equal to 1
+  if(totalPeople === "" || numPeople <= 1){
+   numPeople = 1;
+
+   document.getElementById("each").style.display ="none";
+
+   }else{
+
+      document.getElementById("each").style.display =" block";
+   }
 
 });
