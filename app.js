@@ -21,4 +21,12 @@ calculateBtn.addEventListener('click', ()=>{
       document.getElementById("each").style.display =" block";
    }
 
+     //Do soe math!
+     var total = (billAmount * serviceQuality) / numPeople;
+     total = Math.round(total* 100) / 100;
+     total= total.toFixed(2);
+     //display
+     document.getElementById("totalTip").style.display ="block";
+     document.getElementById("tip").innerHTML = total;
+
 });
