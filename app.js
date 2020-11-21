@@ -6,5 +6,8 @@ const calculateBtn = document.getElementById('calBtn');
 
 calculateBtn.addEventListener('click', ()=>{
 
+   if(billAmount === "" || serviceQuality == 0 || totalPeople === ""){
+      window.alert("Please Enter some Values to get this baby up and running!");
+  }
 
 });
